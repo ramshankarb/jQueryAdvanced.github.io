@@ -41,8 +41,8 @@ let getAllDetails = () => {
             $("#showData").append(output); //attaching output
         }, 
         error: (err) => {
-            console.log(err.responseJSON.error.message);
-            alert(err.responseJSON.error.message);
+            console.log(err.responseJSON.Message);
+            alert(err.responseJSON.Message);
         }
 
     });// end ajax call 
