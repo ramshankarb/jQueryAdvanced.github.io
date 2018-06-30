@@ -26,7 +26,11 @@ let getAllDetails = () => {
         async:true,
         url:myUrl,
         success: (response) => {
-            //console.log(myUrl);//For testing purpose
+            console.log(myUrl);//For testing purpose
+            console.log(response);
+            if(response.Title == undefined || response.Title ==null || response.Title =="" ){
+                alert("Movie not found search again");
+            } else{
             let output = `  <br>
                             <div class="media">
                             <img class="media-left" alt="image is NA" src="${response.Poster}">
@@ -39,6 +43,7 @@ let getAllDetails = () => {
                             </div> `
             
             $("#showData").append(output); //attaching output
+            }
         }, 
         error: (err) => {
             console.log(err.responseJSON.Message);
