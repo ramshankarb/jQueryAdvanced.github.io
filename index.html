@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1>
+    <Title> jquery Advanced </Title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <section>
+        <div id="search " class="container ">
+            <h3 class="h3 "> Movie search </h3>
+            <form id="myForm ">
+                <div class="form-group ">
+                    
+                <label for="imdbByID ">Enter IMDB ID : </label>
+                <input type="text " class="form-control " id="imdbID" placeholder="2874 ">
+                <label for="imdbByTitle ">Enter Title : </label>
+                <input type="text " class="form-control " id="imdbTitle" placeholder="ironman ">
+                <label for="imdbByYear ">Enter the Year : </label>
+                <input type="text " class="form-control " id="imdbYear" placeholder="2017 ">
+                <button type="button" id="submitBtn" class="btn btn-primary">Submit</button>    
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <div class ="card-group" id="showData">
+            </div>
+                
+        </div>
+    </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js "></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "></script>
+<script src="index.js "></script>
+</html>
