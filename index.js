@@ -3,7 +3,7 @@ $(document).ready(() => {
         getAllDetails(); //making the call
     })  
 }); // end document.ready function
-let myUrl=null;
+let myUrl=null; //URL to pass it to ajax request
 let getAllDetails = () => {
     // API call to get user details
     let year=title=imdbId="";
@@ -15,10 +15,10 @@ let getAllDetails = () => {
     //Setting the URL Logic
     if((year !="" || year!=null)&&(title=="" || title==null)&&(imdbId==""||imdbId==null)){
         let title2= window.prompt("Title is required");
-        myUrl = "http://www.omdbapi.com/?t="+title2+"&y="+year+"&apikey=280d032";
+        myUrl = "https://www.omdbapi.com/?t="+title2+"&y="+year+"&apikey=280d032";
     }
     else
-    myUrl = "http://www.omdbapi.com/?i="+imdbId+"&t="+title+"&y="+year+"&apikey=280d032"; 
+    myUrl = "https://www.omdbapi.com/?i="+imdbId+"&t="+title+"&y="+year+"&apikey=280d032"; 
     
     $.ajax({
         type:'GET',
